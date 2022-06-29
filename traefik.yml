@@ -4,6 +4,9 @@ entryPoints:
   https:
     address: ":443"
 
+api:
+  dashboard: true
+
 providers:
   docker:
     network: "web"
