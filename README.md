@@ -1,7 +1,7 @@
 # Start
 
 ```bash
-    docker create network web
+    docker network create web
     cp .env.example .env
     docker-compose up -d
 ```
