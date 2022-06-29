@@ -10,7 +10,7 @@ services:
     container_name: "traefik"
     restart: always
     networks:
-      - name: "web"
+      - "web"
     command:
       - "--certificatesResolvers.letsencrypt.acme.email=${ACME_EMAIL}"
     ports:
