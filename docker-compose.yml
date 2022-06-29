@@ -9,6 +9,8 @@ services:
     image: "traefik:v2.7"
     container_name: "traefik"
     restart: always
+    networks:
+      - name: "web"
     command:
       - "--certificatesResolvers.letsencrypt.acme.email=${ACME_EMAIL}"
     ports:
